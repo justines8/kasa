@@ -1,6 +1,6 @@
 import Carousel from "../Generics/Carousel.js"
 import OfferHeader from "../Offers/OfferHeader.js"
-import react, { useState } from "react";
+import React, { useState } from "react";
 
 const Offer = ({ offer }) => {
     const [ isDisplayed, setIsDisplayed ] = useState(false);
@@ -13,7 +13,7 @@ const Offer = ({ offer }) => {
         <div>
             <OfferHeader offer={offer} />
             <img src={offer.cover} alt={offer.title} />
-            <button onClick={() => handleClick()}>Afficher le carousel</button>
+            <button onClick={handleClick}>Afficher le carousel</button>
             {isDisplayed && <Carousel images={offer.pictures} />}
         </div>
     );

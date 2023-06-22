@@ -1,3 +1,5 @@
+import React from "react";
+
 const OfferHeader = ({ offer }) => {
     return (
         <div>
